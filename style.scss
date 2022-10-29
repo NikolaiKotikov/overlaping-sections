@@ -1,0 +1,60 @@
+@import 'styles';
+
+body {
+  padding-bottom: 100vh;
+}
+
+.hero {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+}
+
+.scroll {
+  height: 300vh;
+  // @include pattern-grid;
+}
+
+.section {
+  position: sticky;
+
+  height: 100vh;
+
+  font-size: 30px;
+  color: white;
+
+  top: 0;
+  overflow: hidden;
+
+  &--1 {
+    z-index: 2;
+  }
+
+  &--2 {
+    margin-top: -100vh;
+  }
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+
+  &--solid {
+    background: #1b1dc9;
+  }
+  &--gradient {
+    background-image: linear-gradient(180deg, #ec5c83 0%, #ffdb58 100%);
+  }
+}
